@@ -22,7 +22,7 @@ function currentLine(katzDeliLine) {
   else {
     let i = 0;
     do {
-      currLine += ` ${i + 1}. ${katzDeliLine[i]}`;
+      currLine += ` ${i + 1}. ${katzDeliLine[i]},`;
       i++;
     } while (i < katzDeliLine.length);
   }
