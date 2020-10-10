@@ -5,5 +5,10 @@ function takeANumber(people, person) {
 }
 
 function nowServing(katzDeliLine) {
-  return katzDeliLine.shift();
+  if (katzDeliLine.length === 0) {
+    return "there is nobody to be served!";
+  }
+  else {
+    return katzDeliLine.shift();
+  }
 }
